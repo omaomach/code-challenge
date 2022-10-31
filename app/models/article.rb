@@ -15,6 +15,10 @@ class Article
         @author.name
     end
 
+    def Magazine
+        @magazine.name
+    end
+
     # Returns an array of all Article instances
     def self.all 
         @@article

@@ -14,11 +14,13 @@ author1.magazines
 magazine1 = Magazine.new("GOT", "fiction")
 magazine2 = Magazine.new("standard", "news")
 magazine3 = Magazine.new("nation", "news")
+Magazine.all
 magazine1.contributors
 
 article1 = Article.new(author1, magazine1, "Kings Landing")
 article2 = Article.new(author1, magazine1, "The watch")
 article1.author
+Article.all
 author1.add_article(magazine1, "Prince of Azkaban")
 author1.add_article(magazine1, "chronical of nania")
 author1.add_article(magazine1, "Prince Casper")
