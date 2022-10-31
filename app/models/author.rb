@@ -13,8 +13,8 @@ class Author
   end
 
   def magazines # Returns a **unique** array of Magazine instances for which the author has contributed to
-    magazines = articles.map do |article|
-          article.magazine
+    magazines = Magazine.all.map do |mag|
+          mag
     end
     magazines.uniq
   end
